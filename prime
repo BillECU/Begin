@@ -1,0 +1,21 @@
+void primeb(int a,int b)  //ab 求質
+{
+	int c;
+	if(a>b)
+		{
+		c=a;
+	    a=b;
+		b=c;
+	}
+   for(int i=a;i<=b;i++)
+   {   int d=0;
+	   for(int j=2;j<=sqrt((float)i);j++)
+	       {
+		   if(i%j==0)
+			   d++;
+	   }
+		   if(d==0)
+	    cout<<i<<",";
+	   
+   }cout<<"\b";
+}
